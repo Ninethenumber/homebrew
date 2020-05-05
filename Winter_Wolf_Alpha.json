@@ -1,0 +1,181 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheCloudPeaks",
+				"abbreviation": "TCP",
+				"full": "The Cloud Peaks",
+				"url": "",
+				"authors": [
+					"Nine"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1588711318,
+		"dateLastModified": 1588711318
+	},
+	"monster": [
+		{
+			"name": "Winter Wolf Alpha",
+			"source": "TheCloudPeaks",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 120
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 50
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 14,
+			"int": 9,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"stealth": "+5",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Giant",
+				"Winter Wolf"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Snow Camouflage",
+					"entries": [
+						"The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 5}",
+					"entries": [
+						"The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a {@dc 13} Dexterity saving throw, taking 18 ({@damage 4d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"mountain"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/538/winter-wolf.mp3",
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"name": "Winter Wolf",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves' deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Winter Wolf.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Winter Wolf.png?v=1.103.8",
+			"save": {
+				"str": "+7",
+				"dex": "+5"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"legendary": [
+				{
+					"name": "Reposition",
+					"entries": [
+						"The winter wolf alpha can command up to two other winter wolves that can either see or hear it within 120 feet. The target can then move up to half its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack (Costs 2 Actions)",
+					"entries": [
+						"The winter wolf attacks once with its bite."
+					]
+				},
+				{
+					"name": "Howl (Costs 3 Actions)",
+					"entries": [
+						"The winter wolf alpha can let out a howl filling the area around it. Anyone that can hear the howl must make a {@dc 13} Wisdom saving throw or become {@condition frightened}. In addition within the next {@dice 1d4} rounds another winter wolf will come to the alpha's aid."
+					]
+				}
+			],
+			"uniqueId": "a74cd721d110c48dde5e692b861c9909"
+		}
+	]
+}
