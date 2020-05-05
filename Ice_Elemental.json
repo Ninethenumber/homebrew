@@ -1,0 +1,177 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheCloudPeaks",
+				"abbreviation": "TCP",
+				"full": "The Cloud Peaks",
+				"url": "",
+				"authors": [
+					"Nine"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1588666985,
+		"dateLastModified": 1588666985
+	},
+	"monster": [
+		{
+			"name": "Ice Elemental",
+			"size": "L",
+			"type": "elemental",
+			"source": "TheCloudPeaks",
+			"alignment": [
+				{
+					"alignment": [
+						"N"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d10 + 22",
+				"average": 82
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90,
+				"canHover": false,
+				"swim": 80
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 12,
+			"int": 14,
+			"wis": 10,
+			"cha": 7,
+			"passive": 10,
+			"cr": "5",
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"cold",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Ice Bite",
+					"entries": [
+						"A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Cold Absorption",
+					"entries": [
+						"Whenever the elemental is subjected to cold damage, it takes no damage and regains a number of hit points equal to the cold damage dealt."
+					]
+				},
+				{
+					"name": "Cold Coat",
+					"entries": [
+						"When a weapon touches the elemental it is coated with a cold sheen for 1 minute. When a weapon is coated it deals an additional 2 ({@damage 1d4}) cold damage. The ice can be attacked (AC 13; 10 hit points; vulnerability to fire; immunity to poison and psychic damage) or can be removed as an action."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"traitTags": [
+				"Damage Absorption"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elemental makes two touch attacks."
+					]
+				},
+				{
+					"name": "Touch",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage, plus 7 ({@damage 1d8 + 3}) cold damage."
+					]
+				},
+				{
+					"name": "Ice Wall",
+					"entries": [
+						"The elemental shoots a line of freezing water that is 40 feet long and 5 feet wide. Each creature in that area must succeed on a {@dc 13} Constitution saving throw. On a failed save, a target begins to turn to ice and is {@condition restrained}. The {@condition restrained} target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is {@condition petrified} until thawed out."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"petrified",
+				"restrained"
+			],
+			"environment": [
+				"arctic",
+				"mountain",
+				"underwater"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/474x/94/24/7f/94247f480f99e80a775e5e67dfaa54ff.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/2XPHj41.png",
+			"languages": [
+				"Auran",
+				"Aquan"
+			],
+			"languageTags": [
+				"AU",
+				"AQ"
+			],
+			"uniqueId": "0bd6b599dd88e349b1e9c512930cf715"
+		}
+	]
+}
