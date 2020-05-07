@@ -1,0 +1,155 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheCloudPeaks",
+				"abbreviation": "TCP",
+				"full": "The Cloud Peaks",
+				"url": "",
+				"authors": [
+					"Nine"
+				],
+				"convertedBy": [
+					"Nine"
+				]
+			}
+		],
+		"dateAdded": 1588864283,
+		"dateLastModified": 1588864283
+	},
+	"monster": [
+		{
+			"name": "Long Lug Hill Giant",
+			"source": "TheCloudPeaks",
+			"size": "H",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d12 + 36",
+				"average": 94
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 12,
+			"con": 19,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two greatclub attacks."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}21 ({@damage 3d8 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "New Giant Options",
+					"entries": [
+						"Some adult hill giants like to hurl themselves bodily at smaller foes and crush them beneath their bulk. This ability is represented by the following action option.",
+						{
+							"name": "Squash",
+							"type": "entries",
+							"entries": [
+								"{@atk mw} {@hit 8} to hit, reach 5 ft., one Medium or Smaller creature. {@h}26 ({@damage 6d6 + 5}) bludgeoning damage, the giant lands {@condition prone} in the target's space, and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition prone}. The grapple ends early if the giant stands up."
+							]
+						}
+					],
+					"variantSource": {
+						"source": "SKT",
+						"page": 246
+					}
+				}
+			],
+			"environment": [
+				"hill"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/269/hill-giant.mp3",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone",
+				"grappled"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/zVzqWCA.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/90sTaI5.png",
+			"shortName": "Long Lug",
+			"trait": [
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the long lug can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the long lug moves at least 15 feet straight toward a target and then hits it with its greatclub on the same turn, the target takes an extra 10 ({@damage 3d6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive",
+				"Charge"
+			],
+			"uniqueId": "13b8c837b61aba5ef10d2f7b89f720a0"
+		}
+	]
+}

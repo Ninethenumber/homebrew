@@ -1,0 +1,132 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheCloudPeaks",
+				"abbreviation": "TCP",
+				"full": "The Cloud Peaks",
+				"url": "",
+				"authors": [
+					"Nine"
+				],
+				"convertedBy": [
+					"Nine"
+				]
+			}
+		],
+		"dateAdded": 1588865243,
+		"dateLastModified": 1588865243
+	},
+	"monster": [
+		{
+			"name": "Muddo Hill Giant",
+			"source": "TheCloudPeaks",
+			"size": "H",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d12 + 40"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 11,
+			"con": 19,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two greatclub attacks."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Crack Muck {@recharge 5}",
+					"entries": [
+						"The muddo hill giant grabs a handful of crack muck and launches it out in a 15-feet cone. Each creature in that area must succeed on a {@dc 15} Dexterity saving throw or be {@condition blinded} for 1 minute. As an action the {@condition blinded} creature can wipe th muck off it. "
+					]
+				}
+			],
+			"environment": [
+				"hill"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/269/hill-giant.mp3",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned"
+			],
+			"tokenUrl": "https://i.imgur.com/cfXnSZY.png",
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"grappled"
+					]
+				},
+				{
+					"conditionImmune": [
+						"restrained"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Stench",
+					"entries": [
+						"Any creature that starts its turn within 10 feet of the muddo hill giant must succeed on a {@dc 11} Constitution saving throw or be {@condition poisoned} until the start of its next turn. On a successful saving throw, the creature is immune to the muddo hill giant's stench for 24 hours."
+					]
+				}
+			],
+			"uniqueId": "b93e32d03254ab26692ab9c7c090f553"
+		}
+	]
+}
