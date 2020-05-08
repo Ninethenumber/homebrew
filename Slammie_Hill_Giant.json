@@ -1,0 +1,130 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheCloudPeaks",
+				"abbreviation": "TCP",
+				"full": "The Cloud Peaks",
+				"url": "",
+				"authors": [
+					"Nine"
+				],
+				"convertedBy": [
+					"Nine"
+				]
+			}
+		],
+		"dateAdded": 1588915697,
+		"dateLastModified": 1588915697
+	},
+	"monster": [
+		{
+			"name": "Slammie Hill Giant",
+			"source": "TheCloudPeaks",
+			"size": "H",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d12 + 40"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 19,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The giant makes two greatclub attacks."
+					]
+				},
+				{
+					"name": "Greatclub",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one Medium or Smaller creature. {@h}26 ({@damage 6d6 + 5}) bludgeoning damage, the giant lands {@condition prone} in the target's space, and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition prone} and suffocating. The grapple ends early if the giant stands up."
+					]
+				},
+				{
+					"name": "Slammie Whammie {@recharge 5}",
+					"entries": [
+						"If the giant jumps at least 15 feet as part of its movement, it can then use this action to land {@condition prone} on its belly in a space that contains one or more other creatures. Each of those creatures must succeed on a {@dc 15} Strength or Dexterity saving throw or take 25 ({@damage 6d6 + 5}) bludgeoning damage.(target's choice) and be {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition prone}. On a successful save, the creature takes only half the damage, isn't knocked {@condition prone}, and is pushed 5 feet out of the giant's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls {@condition prone} in the giant's space."
+					]
+				}
+			],
+			"environment": [
+				"hill"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/269/hill-giant.mp3",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/s54o5mk.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ojLBGQ5.png",
+			"conditionInflict": [
+				"grappled",
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"The hill giant's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				}
+			],
+			"shortName": "giant",
+			"uniqueId": "1812719792d920e0f2000e156dcdd175"
+		}
+	]
+}
