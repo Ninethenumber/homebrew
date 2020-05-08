@@ -1,0 +1,138 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheCloudPeaks",
+				"abbreviation": "TCP",
+				"full": "The Cloud Peaks",
+				"url": "",
+				"authors": [
+					"Nine"
+				],
+				"convertedBy": [
+					"Nine"
+				]
+			}
+		],
+		"dateAdded": 1588912586,
+		"dateLastModified": 1588912586
+	},
+	"monster": [
+		{
+			"name": "Randy Hill Giant",
+			"source": "TheCloudPeaks",
+			"size": "H",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 60",
+				"average": 125
+			},
+			"speed": {
+				"walk": 5
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 23,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rock",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/240 ft., one target. {@h}21 ({@damage 3d10 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"The randy hill giant makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the randy hill giant, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the randy hill giant's turns.",
+						"If the randy hill giant takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the randy hill giant If the randy hill giant dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 15 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"hill"
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/269/hill-giant.mp3",
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"A"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Frp4ePs.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/2H3XahA.png",
+			"save": {
+				"con": "+9"
+			},
+			"conditionImmune": [
+				"prone"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"trait": [
+				{
+					"name": "Vaccum",
+					"entries": [
+						"The randy hill giant breathes in intensely, sucking in all creatures in a 100-feet cone. A creature in the cone at the start of the randy hill giants turn must make a {@dc 16} Strength saving throw or be pulled 30-feet towards the randy hill giant. At the end of each of its turns, the randy hill giant decides which way the cone faces and whether the cone is active."
+					]
+				},
+				{
+					"name": "Blubber",
+					"entries": [
+						"When the randy hill giant takes bludgeoning, piercing or slashing damage it reduces the damage taken by 3."
+					]
+				}
+			],
+			"uniqueId": "13bebc884a3cc26e7fe497de4690f4e5"
+		}
+	]
+}
